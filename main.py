@@ -33,6 +33,8 @@ panelCentral.pack(side=TOP)
 botonPeliculasVistas = Button(panelCentral,text="¡Consulta tus películas Vistas!",command=consultar_peliculasTODO)
 botonPeliculasVistas.grid(column=0,row=0)
 
+añadirPelicula = Button(panelCentral,text="¡Añade una nueva película!",command=añadir_pelicula)
+añadirPelicula.grid(column=0,row=1)
 
 
 
