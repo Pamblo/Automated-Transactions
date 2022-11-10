@@ -1,8 +1,11 @@
 import tkinter
 
+import clases
+import funciones
 import graficos
 from sql import *
 from funciones import *
+from clases import *
 from tkinter import *
 from tkinter import ttk
 
@@ -30,10 +33,10 @@ mensajeBienvenida.grid(column=0,row=1)
 panelCentral = Frame(cineDU,border=5,relief="flat")
 panelCentral.pack(side=TOP)
 
-botonPeliculasVistas = Button(panelCentral,text="¡Consulta tus películas Vistas!",command=consultar_peliculasTODO)
+botonPeliculasVistas = Button(panelCentral,text="¡Consulta tus películas Vistas!",command=funciones.consultar_peliculasTODO)
 botonPeliculasVistas.grid(column=0,row=0)
 
-añadirPelicula = Button(panelCentral,text="¡Añade una nueva película!",command=añadir_pelicula)
+añadirPelicula = Button(panelCentral,text="¡Añade una nueva película!",command=clases.Ventana_añadir_pelicula)
 añadirPelicula.grid(column=0,row=1)
 
 
